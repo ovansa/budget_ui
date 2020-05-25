@@ -26,7 +26,7 @@ class RadialPainter extends CustomPainter {
     canvas.drawCircle(center, radius, bgLine);
     double sweepAngle = 2 * pi * percent;
     canvas.drawArc(Rect.fromCircle(center: center, radius: radius), -pi / 2,
-        sweepAngle, true, completeLine);
+        sweepAngle, false, completeLine);
   }
 
   @override
